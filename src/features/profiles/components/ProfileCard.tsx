@@ -10,7 +10,6 @@ type ProfileCardProps = {
   likedByThem?: boolean;
 };
 
-const x: number = "これは文字列"
 export function ProfileCard({
   profile,
   isLiked,
