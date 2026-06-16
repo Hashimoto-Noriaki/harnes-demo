@@ -7,7 +7,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "biome check",
-    "format": "biome format --write"
+    "lint:fix": "biome check --write",
+    "format": "biome format --write",
+    "type-check": "tsc --noEmit",
+    "test": "vitest"
   },
   "dependencies": {
     "next": "16.3.0-canary.45",
@@ -17,11 +20,16 @@
   "devDependencies": {
     "@biomejs/biome": "2.4.2",
     "@tailwindcss/postcss": "^4",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@vitejs/plugin-react": "^6.0.2",
+    "jsdom": "^29.1.1",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "vitest": "^4.1.9"
   },
   "packageManager": "pnpm@11.5.0"
 }
